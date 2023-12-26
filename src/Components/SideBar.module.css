@@ -18,6 +18,7 @@
 }
 
 Button{
+    transition: 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +33,7 @@ Button{
 }
 
 .customButton .icon{
+    transition: 0.2s;
     width: 70%;
     height: 70%;
     filter: brightness(0) invert(1);
@@ -39,14 +41,27 @@ Button{
 
 
 .customButton:hover .icon{
+    transition: 0.2s;
     filter: invert(10%) sepia(77%) saturate(7451%) hue-rotate(249deg) brightness(114%) contrast(108%);
 }
 
 
 button:hover {
+    transition: 0.2s;
     background-color: white;
     
 } 
+
+
+
+.customButton.active .icon {
+    filter: invert(10%) sepia(77%) saturate(7451%) hue-rotate(249deg) brightness(114%) contrast(108%)
+}
+
+button.active{  
+    background-color: white;
+}
+
 
 
 
