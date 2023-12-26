@@ -1,11 +1,10 @@
-
+import Card from "../Components/Card";
 
 function Home(){
     return (
-        <div>
+        <Card>
             <h1>Hi, Here is a quick view of your week</h1>
-            <div></div>
-        </div>
+        </Card>
     )
 }
 

@@ -1,11 +1,11 @@
-
+import Card from "../Components/Card";
 
 function NotFound(){
     return (
-        <div>
+        <Card>
             <h1>Error: page not found</h1>
             
-        </div>
+        </Card>
     )
 }
 

@@ -1,10 +1,10 @@
-
+import Card from "../Components/Card";
 
 function Schedule(){
     return (
-        <div>
+        <Card>
             <h2>Monday</h2>
-        </div>
+        </Card>
     )
 }
 

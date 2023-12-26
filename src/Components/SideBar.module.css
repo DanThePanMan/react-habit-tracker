@@ -1,11 +1,11 @@
 .Background{
     display: flex;
     flex-direction: column;
-    background-color: #3228ff;
+    background-color: #7c3aed;
     justify-content: flex-start;
-    padding-top: 0px;
+    padding-top: 16px;
     height: 100%;
-    width: 72px;
+    width: 80px;
 }   
 
 .TopGroup{
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     height: 256px;
-    gap: 12px;
+    gap: 16px;
 }
 
 Button{
@@ -24,12 +24,12 @@ Button{
     justify-content: center;
     flex-shrink:0;
     flex-basis: auto;
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     padding: none;
     border: none;
     border-radius: 8px;
-    background-color: #938eff;
+    background-color: #9b69f1;
 }
 
 .customButton .icon{
@@ -42,7 +42,7 @@ Button{
 
 .customButton:hover .icon{
     transition: 0.2s;
-    filter: invert(10%) sepia(77%) saturate(7451%) hue-rotate(249deg) brightness(114%) contrast(108%);
+    filter: invert(34%) sepia(66%) saturate(7010%) hue-rotate(254deg) brightness(94%) contrast(97%);
 }
 
 
@@ -55,7 +55,7 @@ button:hover {
 
 
 .customButton.active .icon {
-    filter: invert(10%) sepia(77%) saturate(7451%) hue-rotate(249deg) brightness(114%) contrast(108%)
+    filter:  invert(34%) sepia(66%) saturate(7010%) hue-rotate(254deg) brightness(94%) contrast(97%);
 }
 
 button.active{  
