@@ -13,7 +13,7 @@ import classes from "./App.module.css";
 function App() {
   return (
     <div className={classes.Content}>
-      <Router>
+      <Router basename="react-habit-tracker">
         <SideBar />
         <Routes>
           <Route path="/" element={<Home />} />
