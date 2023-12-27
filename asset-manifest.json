@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-habit-tracker/static/css/main.b17ee28c.css",
-    "main.js": "/react-habit-tracker/static/js/main.8e17a698.js",
+    "main.js": "/react-habit-tracker/static/js/main.10229c5d.js",
     "static/media/Rubik.ttf": "/react-habit-tracker/static/media/Rubik.d83d9d961a7aaca406c2.ttf",
     "static/media/HomeIcon.svg": "/react-habit-tracker/static/media/HomeIcon.1be37bc6b1894801457c850ea2d91faf.svg",
     "static/media/ListIcon.svg": "/react-habit-tracker/static/media/ListIcon.311732a77df3a5ff995c2d448c8d14cb.svg",
@@ -9,10 +9,10 @@
     "index.html": "/react-habit-tracker/index.html",
     "static/media/SearchIcon.svg": "/react-habit-tracker/static/media/SearchIcon.76cea32569b6755f13ff0b9d5246cd58.svg",
     "main.b17ee28c.css.map": "/react-habit-tracker/static/css/main.b17ee28c.css.map",
-    "main.8e17a698.js.map": "/react-habit-tracker/static/js/main.8e17a698.js.map"
+    "main.10229c5d.js.map": "/react-habit-tracker/static/js/main.10229c5d.js.map"
   },
   "entrypoints": [
     "static/css/main.b17ee28c.css",
-    "static/js/main.8e17a698.js"
+    "static/js/main.10229c5d.js"
   ]
 }
