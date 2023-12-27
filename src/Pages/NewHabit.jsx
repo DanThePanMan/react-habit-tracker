@@ -1,10 +1,9 @@
+import NewHabitForm from "../Components/NewHabitForm";
 
 
 function NewHabit(){
     return (
-        <div>
-            <form></form>
-        </div>
+        <NewHabitForm/>
     )
 }
 

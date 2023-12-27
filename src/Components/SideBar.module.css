@@ -17,7 +17,7 @@
     gap: 16px;
 }
 
-Button{
+.sidebarButton{
     transition: 0.2s;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ Button{
     background-color: #9b69f1;
 }
 
-.customButton .icon{
+.sidebarButton .icon{
     transition: 0.2s;
     width: 70%;
     height: 70%;
@@ -40,13 +40,13 @@ Button{
 }
 
 
-.customButton:hover .icon{
+.sidebarButton:hover .icon{
     transition: 0.2s;
     filter: invert(34%) sepia(66%) saturate(7010%) hue-rotate(254deg) brightness(94%) contrast(97%);
 }
 
 
-button:hover {
+.sidebarButton:hover {
     transition: 0.2s;
     background-color: white;
     
@@ -54,11 +54,11 @@ button:hover {
 
 
 
-.customButton.active .icon {
+.sidebarButton.active .icon {
     filter:  invert(34%) sepia(66%) saturate(7010%) hue-rotate(254deg) brightness(94%) contrast(97%);
 }
 
-button.active{  
+.sidebarButton.active{  
     background-color: white;
 }
 

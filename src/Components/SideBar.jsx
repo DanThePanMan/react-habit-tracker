@@ -14,16 +14,16 @@ function SideBar() {
   return (
     <div className={classes.Background}>
       <div className={classes.TopGroup}>
-        <button className={`${classes.customButton} ${location.pathname === "/" ? classes.active : ""}`} onClick={() => {navigate("/")}}>
+        <button className={`${classes.sidebarButton} ${location.pathname === "/" ? classes.active : ""}`} onClick={() => {navigate("/")}}>
           <img className={classes.icon} src={HomeIcon} alt="Home Icon"></img>
         </button>
-        <button className={`${classes.customButton} ${location.pathname === "/schedule" ? classes.active : ""}`} onClick={() => {navigate("/schedule")}}>
+        <button className={`${classes.sidebarButton} ${location.pathname === "/schedule" ? classes.active : ""}`} onClick={() => {navigate("/schedule")}}>
           <img className={classes.icon} src={ListIcon} alt="List Icon"></img>
         </button>
-        <button className={`${classes.customButton} ${location.pathname === "/new" ? classes.active : ""}`} onClick={() => {navigate("/new")}}>
+        <button className={`${classes.sidebarButton} ${location.pathname === "/new" ? classes.active : ""}`} onClick={() => {navigate("/new")}}>
           <img className={classes.icon} src={NewIcon} alt="New Icon"></img>
         </button>
-        <button className={`${classes.customButton} ${location.pathname === "/search" ? classes.active : ""}`} onClick={() => {navigate("/search")}}>
+        <button className={`${classes.sidebarButton} ${location.pathname === "/search" ? classes.active : ""}`} onClick={() => {navigate("/search")}}>
           <img className={classes.icon} src={SearchIcon} alt="Search Icon"></img>
         </button>
       </div>
