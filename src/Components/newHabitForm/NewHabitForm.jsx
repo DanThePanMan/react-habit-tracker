@@ -1,7 +1,7 @@
 import classes from "./NewHabitForm.module.css";
-import Card from "./Card";
+import Card from "../card/Card";
 import { useRef } from "react";
-import { useState } from "react";
+import { useState } from "react"; //for the color selection
 
 
 function NewHabitForm(props) {
@@ -43,6 +43,7 @@ function NewHabitForm(props) {
     habitData.title = enteredTitle;
     habitData.description = enteredDescription;
     habitData.time = [enteredHour, enteredMinute];
+    habitData.status = false;
     
     props.onAdd(habitData);
   }

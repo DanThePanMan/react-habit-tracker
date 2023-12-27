@@ -1,8 +1,8 @@
 import classes from "./SideBar.module.css";
-import HomeIcon from "../Icon/HomeIcon.svg"
-import ListIcon from "../Icon/ListIcon.svg"
-import NewIcon from "../Icon/NewIcon.svg"
-import SearchIcon from "../Icon/SearchIcon.svg"
+import HomeIcon from "../../Icon/HomeIcon.svg"
+import ListIcon from "../../Icon/ListIcon.svg"
+import NewIcon from "../../Icon/NewIcon.svg"
+import SearchIcon from "../../Icon/SearchIcon.svg"
 
 import { useNavigate, useLocation } from "react-router-dom";
 

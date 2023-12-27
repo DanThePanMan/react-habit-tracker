@@ -1,4 +1,4 @@
-import NewHabitForm from "../Components/NewHabitForm";
+import NewHabitForm from "../Components/newHabitForm/NewHabitForm";
 
 
 function NewHabit(){
