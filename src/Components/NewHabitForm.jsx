@@ -10,25 +10,25 @@ function NewHabitForm(props) {
   const hoursRef = useRef()
   const minutesRef = useRef()
 
-  const storedInfo = {}
+  const habitData = {}
 
   function redHandler(){
-    storedInfo.color = "#ed3a51";
+    habitData.color = "#ed3a51";
   }
   function blueHandler(){
-    storedInfo.color = "#4C9DFA";
+    habitData.color = "#4C9DFA";
   }
   function yellowHandler(){
-    storedInfo.color = "#eded3a";
+    habitData.color = "#eded3a";
   }
   function greenHandler(){
-    storedInfo.color = "#54AD56";
+    habitData.color = "#54AD56";
   }
   function purpleHandler(){
-    storedInfo.color = "#7c3aed";
+    habitData.color = "#7c3aed";
   }
   function greyHandler(){
-    storedInfo.color = "grey";
+    habitData.color = "grey";
   }
 
   function submitHandler(event) {
@@ -40,11 +40,11 @@ function NewHabitForm(props) {
     const enteredMinute = minutesRef.current.value;
 
     
-    storedInfo.title = enteredTitle;
-    storedInfo.description = enteredDescription;
-    storedInfo.time = [enteredHour, enteredMinute];
+    habitData.title = enteredTitle;
+    habitData.description = enteredDescription;
+    habitData.time = [enteredHour, enteredMinute];
     
-    console.table(storedInfo);
+    props.onAdd(habitData);
   }
 
 
