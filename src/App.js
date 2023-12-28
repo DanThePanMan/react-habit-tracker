@@ -55,13 +55,13 @@ function App() {
           <SideBar />
         </div>
         <div className={classes.Center}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/new" element={<NewHabit />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/new" element={<NewHabit />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </div>
         <div className={classes.RightSide}>
           <QuickHabits />

@@ -1,7 +1,11 @@
 .pageArea{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     flex-grow: 1;
     
+}
+
+.Card{
+    padding: 12px 12px 0px 12px;
 }

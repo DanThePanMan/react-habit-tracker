@@ -16,7 +16,9 @@ function NewHabit(){
     return (
         <div className={classes.pageArea}>
             <Card>
-                <NewHabitForm onAdd = {addHabitHandler}/>
+                <div className={classes.Card}>
+                    <NewHabitForm onAdd = {addHabitHandler}/>
+                </div>
             </Card>
         </div>
     )
