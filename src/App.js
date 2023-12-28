@@ -54,6 +54,7 @@ function App() {
         <div className={classes.LeftSide}>
           <SideBar />
         </div>
+        <div className={classes.Center}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
@@ -61,6 +62,7 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </div>
         <div className={classes.RightSide}>
           <QuickHabits />
         </div>

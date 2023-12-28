@@ -4,12 +4,17 @@ body .Content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 99.1vw;
+  width: auto;
   height: 100vh;
 }
 
+.Center{
+  padding:10px;
+  flex-grow: 1;
+}
+
 .RightSide{
-  padding:10px 0px;
+  padding:10px 10px 10px 0px;
   flex:initial;
 }
 
