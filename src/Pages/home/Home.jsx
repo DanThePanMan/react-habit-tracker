@@ -1,4 +1,4 @@
-import Card from "../Components/card/Card";
+import Card from "../../Components/card/Card";
 
 function Home(){
     return (

@@ -1,0 +1,7 @@
+.content{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    flex:initial;
+    height: 95vh;
+}

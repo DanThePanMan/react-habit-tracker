@@ -1,0 +1,6 @@
+.pageArea{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow: 1;
+}

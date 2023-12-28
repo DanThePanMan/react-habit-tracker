@@ -1,4 +1,6 @@
-import NewHabitForm from "../Components/newHabitForm/NewHabitForm";
+import NewHabitForm from "../../Components/newHabitForm/NewHabitForm";
+import classes from "./NewHabit.module.css"
+import Card from "../../Components/card/Card";
 
 
 function NewHabit(){
@@ -12,7 +14,11 @@ function NewHabit(){
         });
     }
     return (
-        <NewHabitForm onAdd = {addHabitHandler}/>
+        <div className={classes.pageArea}>
+            <Card>
+                <NewHabitForm onAdd = {addHabitHandler}/>
+            </Card>
+        </div>
     )
 }
 

@@ -3,9 +3,11 @@
     flex-direction: column;
     background-color: #7c3aed;
     justify-content: flex-start;
-    padding-top: 16px;
-    height: 100%;
+    align-items: center;
+    padding-top: 12px;
+    height: 100vh;
     width: 80px;
+    flex:initial;
 }   
 
 .TopGroup{

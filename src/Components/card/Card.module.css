@@ -2,10 +2,11 @@
     display: flex;
     background-color: white;
     height: fit-content;
-    margin: 16px;
-    padding: 4px 28px;
+    margin: 10px;
+    padding: 24px 24px;
     border-radius: 12px;
     border: solid #dfdee1;
     border-width: 2px;
+    flex-grow: 1;
 }
 

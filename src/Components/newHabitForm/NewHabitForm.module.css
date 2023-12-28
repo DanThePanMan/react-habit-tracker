@@ -1,6 +1,26 @@
+.InputArea{
+    
+    height: 95vh;
+
+
+}
 .InputArea form{
+    
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    align-items: flex-end;
+    align-items: flex-start;
+}
+
+
+.Control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Control.timeInput{
+    display: flex;
+    flex-direction: row;
 }

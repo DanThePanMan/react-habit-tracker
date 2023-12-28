@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import SideBar from "./Components/sideBar/SideBar";
-import Home from "./Pages/Home";
+import Home from "./Pages/home/Home";
 import Schedule from "./Pages/Schedule";
 import Search from "./Pages/Search";
-import NewHabit from "./Pages/NewHabit";
+import NewHabit from "./Pages/newHabit/NewHabit";
 import NotFound from "./Pages/NotFound";
+import QuickHabits from "./Components/quickHabits/QuickHabits"
 
 
 import classes from "./App.module.css";
@@ -50,7 +51,9 @@ function App() {
   return (
     <div className={classes.Content}>
       <Router basename="/react-habit-tracker">
-        <SideBar />
+        <div className={classes.LeftSide}>
+          <SideBar />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
@@ -58,6 +61,9 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <div className={classes.RightSide}>
+          <QuickHabits />
+        </div>
       </Router>
     </div>
   );
