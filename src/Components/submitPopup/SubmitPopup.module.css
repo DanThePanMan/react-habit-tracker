@@ -1,3 +1,42 @@
-.Content{
-    padding: 12px;
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    padding: 16px 20px;
+}
+
+
+.textContent{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.confirm{
+    transition: 0.15s;
+    font-size: 16px;
+    padding: 8px 16px ;
+    border: none;
+    background-color: #7c3aed;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+.confirm:hover{
+    transition: 0.15s;
+    background-color: #9b69f1;
+    color: white;
 }
