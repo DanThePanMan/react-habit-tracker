@@ -10,13 +10,15 @@
     width: fit-content;
     flex-grow: 1;
     display: flex;
-    align-items: stretch;
+    gap: 1vh;
     flex-direction: column;
-    gap: 3vh;
     font-weight: bold;  
 }
 
 .InputArea form .submitButton{
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
     transition: 0.15s;
     font-size: 16px;
     padding: 8px 16px ;

@@ -104,7 +104,7 @@ function NewHabitForm(props) {
               required
               id="Description"
               ref={descriptionRef}
-              rows={8}
+              rows={6}
             />
           </div>
           <div className={classes.Control}>
