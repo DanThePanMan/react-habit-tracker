@@ -28,6 +28,7 @@
     border-radius: 16px;
 }
 .InputArea form .submitButton:hover{
+    transition: 0.15s;
     background-color: #9b69f1;
     color: white;
     
@@ -94,7 +95,7 @@
 
 .Control .ColorSelector button:hover{
     transition: 0.1s;
-    filter: brightness(0.8);
+    filter: brightness(1.5);
 }
 
 .setRedColor{
@@ -122,5 +123,5 @@
 }
 
 .active{
-    filter: brightness(0.8) !important;
+    filter: brightness(1.5) !important;
 }
