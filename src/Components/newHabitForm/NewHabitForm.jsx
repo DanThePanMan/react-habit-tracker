@@ -2,6 +2,9 @@ import classes from "./NewHabitForm.module.css";
 import { useRef } from "react";
 
 function NewHabitForm(props) {
+
+
+
   const titleRef = useRef();
   const descriptionRef = useRef();
   const hoursRef = useRef();
@@ -27,6 +30,8 @@ function NewHabitForm(props) {
   function greyHandler() {
     habitData.color = "grey";
   }
+
+  greyHandler() //set default color
 
   function submitHandler(event) {
     event.preventDefault();
