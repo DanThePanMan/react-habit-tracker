@@ -1,13 +1,22 @@
 .pageArea{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    margin: 0px;
+    padding: 10px;
     flex-grow: 1;
+
     
 }
 
-.Card{
-    padding: 12px 12px 0px 12px;
+
+
+.Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px 12px 12px 12px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .Popup{

@@ -1,6 +1,6 @@
 .Background{
+    display: flex;
     background-color: white;
-    height: fit-content;
     margin: 0px;
     border-radius: 12px;
     border: solid #dfdee1;

@@ -55,6 +55,7 @@ function NewHabitForm(props) {
   return (
     <div className={classes.InputArea}>
       <form onSubmit={submitHandler}>
+        <div className = {classes.TextSection}>
         <div className={classes.Control}>
           <label htmlFor="title">Name of the habit</label>
           <input type="text" required id="title" ref={titleRef} />
@@ -118,6 +119,7 @@ function NewHabitForm(props) {
               onClick={greyHandler}
             ></button>
           </div>
+        </div>
         </div>
         <button type="submit" className="submitButton">
           Create Habit
