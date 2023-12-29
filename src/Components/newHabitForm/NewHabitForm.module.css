@@ -1,30 +1,66 @@
 .InputArea{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-grow: 1;
 }
 
 .TextSection{
+    width: fit-content;
+    flex-grow: 1;
     display: flex;
+    align-items: stretch;
     flex-direction: column;
-    gap: 6vh;
+    gap: 3vh;
+    font-weight: bold;  
+}
+
+.InputArea form .submitButton{
+    transition: 0.15s;
+    translate: 0px 128px;
+    font-size: 16px;
+    padding: 8px 16px ;
+    border: none;
+    background-color: #7c3aed;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+.InputArea form .submitButton:hover{
+    background-color: #9b69f1;
+    color: white;
+    
 }
 
 .InputArea form{
     font-size: 24px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
     justify-content: space-between;
     flex-grow: 1;
 }
 
+.InputArea input{
+    font-size: 16px;
+    width: auto;
+    border: solid 2px #dedde2;
+    border-radius: 12px;
+    flex-grow: 1;
+}
+
+.InputArea textarea{
+    font-size: 16px;
+    width: 50vw;
+    border: solid 2px #dedde2;
+    border-radius: 12px;
+}
 
 .Control{
     display: flex;
+    gap: 1vh;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -38,12 +74,53 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 8px
+
 }
 
 .Control .ColorSelector button{
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     padding: 0px;
-    border: 0px;
-    border-radius: 12px;
+    border: solid darkslategrey 2.2px;
+    border-radius: 16px;
+
+}
+
+.Control .ColorSelector button{
+    filter: brightness(1.0);
+    transition: 0.1s;
+}
+
+.Control .ColorSelector button:hover{
+    transition: 0.1s;
+    filter: brightness(0.8);
+}
+
+.setRedColor{
+    background-color: #ed3a51;
+}
+
+.setBlueColor{
+    background-color: #4C9DFA;
+}
+
+.setYellowColor{
+    background-color: #eded3a;
+}
+
+.setGreenColor{
+    background-color: #54AD56;
+}
+
+.setPurpleColor{
+    background-color: #7c3aed;
+}
+
+.setGreyColor{
+    background-color: grey;
+}
+
+.active{
+    filter: brightness(0.8) !important;
 }

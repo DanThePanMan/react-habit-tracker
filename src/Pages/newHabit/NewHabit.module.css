@@ -4,17 +4,19 @@
     margin: 0px;
     padding: 10px;
     flex-grow: 1;
-
-    
 }
 
+h1{
+    font-size: 36px;
+}
 
 
 .Content{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 12px 12px 12px 12px;
+    padding: 32px;
+    gap: 4vh;
     flex-shrink: 1;
     flex-grow: 1;
 }

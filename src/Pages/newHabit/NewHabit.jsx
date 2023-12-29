@@ -25,7 +25,7 @@ function NewHabit(){
 
     return (
         <div className={classes.pageArea}>
-            <Card className={classes.Content}>
+            <Card>
                 <div className={classes.Content}>
                     <h1>Create New Habit</h1>
                     <NewHabitForm onAdd = {addHabitHandler}/>
