@@ -1,6 +1,9 @@
 .PageContent{
+    margin: 10px;
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    background-color: red;
 }
 .LeftCluster{
     flex-grow: 2;
