@@ -1,0 +1,8 @@
+.PageContent{
+    display: flex;
+    flex-direction: row;
+}
+.LeftCluster{
+    flex-grow: 2;
+    
+}

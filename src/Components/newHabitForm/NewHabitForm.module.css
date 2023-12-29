@@ -1,14 +1,16 @@
 .InputArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 95vh;
 
 
 }
 .InputArea form{
-    
     font-size: 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -23,4 +25,18 @@
 .Control.timeInput{
     display: flex;
     flex-direction: row;
+}
+
+.Control .ColorSelector{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.Control .ColorSelector button{
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 12px;
 }

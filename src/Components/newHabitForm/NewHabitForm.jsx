@@ -1,6 +1,5 @@
 import classes from "./NewHabitForm.module.css";
 import { useRef } from "react";
-import { useState } from "react"; //for the color selection
 
 function NewHabitForm(props) {
   const titleRef = useRef();
@@ -69,7 +68,7 @@ function NewHabitForm(props) {
         <label htmlFor="hours">Amount of time</label>
           <div className={classes.timeInput}>
             <input type="number" required id="hours" ref={hoursRef} min={0} />
-            <label htmlFor="minutes">:</label>
+            <label htmlFor="minutes"> : </label>
             <input
               type="number"
               required
@@ -81,8 +80,8 @@ function NewHabitForm(props) {
           </div>
         </div>
         <div className={classes.Control}>
-          <p>Color</p>
-          <div className={classes.colorSelector}>
+          <div>Color</div>
+          <div className={classes.ColorSelector}>
             <button
               type="button"
               className={classes.setRedColor}

@@ -7,7 +7,6 @@ import Schedule from "./Pages/Schedule";
 import Search from "./Pages/Search";
 import NewHabit from "./Pages/newHabit/NewHabit";
 import NotFound from "./Pages/NotFound";
-import QuickHabits from "./Components/quickHabits/QuickHabits"
 
 
 import classes from "./App.module.css";
@@ -62,9 +61,6 @@ function App() {
             <Route path="/search" element={<Search />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </div>
-        <div className={classes.RightSide}>
-          <QuickHabits />
         </div>
       </Router>
     </div>
