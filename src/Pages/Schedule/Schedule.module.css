@@ -1,0 +1,11 @@
+.PageContent{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 12px;
+    gap: 12px
+}
+
+h2{
+    padding-left: 16px;
+}

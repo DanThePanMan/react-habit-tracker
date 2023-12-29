@@ -3,7 +3,7 @@
 function Search(){
     return (
         <div>
-            <form></form>
+            <input></input>
         </div>
     )
 }

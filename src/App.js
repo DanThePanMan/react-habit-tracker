@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import SideBar from "./Components/sideBar/SideBar";
 import Home from "./Pages/home/Home";
-import Schedule from "./Pages/Schedule";
+import Schedule from "./Pages/Schedule/Schedule";
 import Search from "./Pages/Search";
 import NewHabit from "./Pages/newHabit/NewHabit";
 import NotFound from "./Pages/NotFound";

@@ -18,7 +18,7 @@
 
 .InputArea form .submitButton{
     transition: 0.15s;
-    translate: 0px 128px;
+    translate: 0px 72px;
     font-size: 16px;
     padding: 8px 16px ;
     border: none;
@@ -77,6 +77,27 @@
     justify-content: space-between;
     gap: 8px
 
+}
+
+.Control .DaySelector{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.Control .DaySelector Button{
+    transition: 0.1s;
+    padding: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    background-color: #7c3aed;
+}
+
+.Control .DaySelector button:hover{
+    transition: 0.1s;
+    filter: brightness(1.5);
 }
 
 .Control .ColorSelector button{

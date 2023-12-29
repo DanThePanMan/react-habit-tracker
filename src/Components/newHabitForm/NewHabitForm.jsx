@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 
 function NewHabitForm(props) {
   const [selectedColor, setSelectedColor] = useState("grey");
+  const [selectedDay, setSelectedDay] = useState("mon");
 
   const titleRef = useRef();
   const descriptionRef = useRef();
@@ -13,6 +14,37 @@ function NewHabitForm(props) {
 
   //set initial color
   habitData.color = "grey";
+  habitData.day = "mon";
+
+
+  function monHandler() {
+    habitData.day = "mon";
+    setSelectedDay("mon");
+  }
+  function tueHandler() {
+    habitData.day = "tue";
+    setSelectedDay("tue");
+  }
+  function wedHandler() {
+    habitData.day = "wed";
+    setSelectedDay("wed");
+  }
+  function thuHandler() {
+    habitData.day = "thu";
+    setSelectedDay("thu");
+  }
+  function friHandler() {
+    habitData.day = "fri";
+    setSelectedDay("fri");
+  }
+  function satHandler() {
+    habitData.day = "sat";
+    setSelectedDay("sat");
+  }
+  function sunHandler() {
+    habitData.day = "sun";
+    setSelectedDay("sun");
+  }
 
   function redHandler() {
     habitData.color = "#ed3a51";
@@ -136,8 +168,64 @@ function NewHabitForm(props) {
                 onClick={greyHandler}
               ></button>
             </div>
+            
+          </div>
+          <div className={classes.Control}>
+          <div>Day of Week</div>
+            <div className={classes.DaySelector}>
+              <button
+                type="button"
+                className={`${classes.setMon} ${
+                  selectedDay === "mon" ? classes.active : ""
+                }`}
+                onClick={monHandler}
+              >Mon</button>
+              <button
+                type="button"
+                className={`${classes.setTue} ${
+                  selectedDay === "tue" ? classes.active : ""
+                }`}
+                onClick={tueHandler}
+              >Tue</button>
+              <button
+                type="button"
+                className={`${classes.setWed} ${
+                  selectedDay === "wed" ? classes.active : ""
+                }`}
+                onClick={wedHandler}
+              >Wed</button>
+              <button
+                type="button"
+                className={`${classes.setThu} ${
+                  selectedDay === "thu" ? classes.active : ""
+                }`}
+                onClick={thuHandler}
+              >Thu</button>
+              <button
+                type="button"
+                className={`${classes.setFri} ${
+                  selectedDay === "fri" ? classes.active : ""
+                }`}
+                onClick={friHandler}
+              >Fri</button>
+              <button
+                type="button"
+                className={`${classes.setSat} ${
+                  selectedDay === "sat" ? classes.active : ""
+                }`}
+                onClick={satHandler}
+              >Sat</button>
+              <button
+                type="button"
+                className={`${classes.setSun} ${
+                  selectedDay === "sun" ? classes.active : ""
+                }`}
+                onClick={sunHandler}
+              >Sun</button>
+            </div>
           </div>
         </div>
+        
         <button type="submit" className={classes.submitButton}>
           Create Habit
         </button>
