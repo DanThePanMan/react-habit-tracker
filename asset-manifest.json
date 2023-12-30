@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-habit-tracker/static/css/main.d41aba83.css",
-    "main.js": "/react-habit-tracker/static/js/main.57387517.js",
+    "main.css": "/react-habit-tracker/static/css/main.baef955f.css",
+    "main.js": "/react-habit-tracker/static/js/main.bfde123e.js",
     "static/media/Rubik.ttf": "/react-habit-tracker/static/media/Rubik.d83d9d961a7aaca406c2.ttf",
     "static/media/HomeIcon.svg": "/react-habit-tracker/static/media/HomeIcon.1be37bc6b1894801457c850ea2d91faf.svg",
     "static/media/ListIcon.svg": "/react-habit-tracker/static/media/ListIcon.311732a77df3a5ff995c2d448c8d14cb.svg",
     "static/media/NewIcon.svg": "/react-habit-tracker/static/media/NewIcon.f66d93e8fca71663dde94960341a249a.svg",
     "index.html": "/react-habit-tracker/index.html",
     "static/media/SearchIcon.svg": "/react-habit-tracker/static/media/SearchIcon.76cea32569b6755f13ff0b9d5246cd58.svg",
-    "main.d41aba83.css.map": "/react-habit-tracker/static/css/main.d41aba83.css.map",
-    "main.57387517.js.map": "/react-habit-tracker/static/js/main.57387517.js.map"
+    "main.baef955f.css.map": "/react-habit-tracker/static/css/main.baef955f.css.map",
+    "main.bfde123e.js.map": "/react-habit-tracker/static/js/main.bfde123e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d41aba83.css",
-    "static/js/main.57387517.js"
+    "static/css/main.baef955f.css",
+    "static/js/main.bfde123e.js"
   ]
 }
