@@ -3,6 +3,7 @@ import classes from "./NewHabit.module.css"
 import Card from "../../Components/card/Card";
 import SubmitPopup from "../../Components/submitPopup/SubmitPopup"
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 function NewHabit(){
@@ -24,7 +25,12 @@ function NewHabit(){
     }
 
     return (
-        <div className={classes.pageArea}>
+        <motion.div 
+        className={classes.pageArea}
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        >
             <Card>
                 <div className={classes.Content}>
                     <h1>Create New Habit</h1>
@@ -36,7 +42,7 @@ function NewHabit(){
             <div className = {classes.Popup}> 
                 {displayPopup ? <SubmitPopup onClick = {confirmHandler}/> : null}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
