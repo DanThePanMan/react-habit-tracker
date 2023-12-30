@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import RouterPages from "./Components/routerPages";
+import RouterPages from "./Components/RouterPages";
 
 import SideBar from "./Components/sideBar/SideBar";
 
@@ -45,7 +45,7 @@ function App() {
           <SideBar />
         </div>
         <div className={classes.Center}>
-          <RouterPages />
+          <RouterPages data = {userData}/>
         </div>
       </Router>
     </div>

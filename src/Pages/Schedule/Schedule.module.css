@@ -1,11 +1,38 @@
 .PageContent{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-grow: 1;
     padding: 12px;
     gap: 12px
 }
 
-h2{
-    padding-left: 16px;
+.DayBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:12px;
+    align-items: center;
+    
+}
+
+.CardStack{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y:auto
+}
+
+.HabitCard{
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 18px;
+    height: 128px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.HabitTitle{
+    font-weight: bold;
 }
