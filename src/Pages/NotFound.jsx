@@ -7,6 +7,7 @@ function NotFound() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      transition={{ duration: 0.13 }}
     >
       <Card>
         <h1>Error: page not found</h1>
