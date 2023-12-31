@@ -34,7 +34,7 @@
 .CardContent{
     padding: 12px;
     gap: 12px;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 }
