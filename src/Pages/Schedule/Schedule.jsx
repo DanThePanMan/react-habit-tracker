@@ -87,7 +87,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
@@ -105,7 +105,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
@@ -123,7 +123,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
@@ -141,7 +141,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
@@ -159,7 +159,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
@@ -177,7 +177,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
@@ -195,7 +195,7 @@ function Schedule(props) {
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
-                    <div>{`${habit.time[0]} hours and ${habit.time[1]} minutes`}</div>
+                    <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   </div>
                 </Card>
               </div>
