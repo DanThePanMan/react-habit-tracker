@@ -18,17 +18,22 @@
 
 .CardStack{
     display: flex;
+    justify-content: flex-start;
+    height: 85vh;
     flex-direction: column;
     gap: 12px;
-    overflow-y:auto
+    overflow-y:auto;
 }
 
 .HabitCard{
-    box-sizing: border-box;
-    padding: 12px;
-    font-size: 18px;
     height: 128px;
+    flex-grow: 0;
+}
+
+.CardContent{
+    padding: 12px;
     gap: 12px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
 }
@@ -36,3 +41,7 @@
 .HabitTitle{
     font-weight: bold;
 }
+
+.CardStack::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }

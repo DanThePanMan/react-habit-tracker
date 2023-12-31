@@ -1,21 +1,18 @@
 import classes from "./NewHabitForm.module.css";
 import { useRef, useState } from "react";
 
+const habitData = {};
+
 function NewHabitForm(props) {
-  const [selectedColor, setSelectedColor] = useState("grey");
-  const [selectedDay, setSelectedDay] = useState("mon");
+  const [selectedColor, setSelectedColor] = useState();
+  const [selectedDay, setSelectedDay] = useState();
 
   const titleRef = useRef();
   const descriptionRef = useRef();
   const hoursRef = useRef();
   const minutesRef = useRef();
 
-  const habitData = {};
-
-  //set initial color
-  habitData.color = "grey";
-  habitData.day = "mon";
-
+ 
 
   function monHandler() {
     habitData.day = "mon";
@@ -66,10 +63,13 @@ function NewHabitForm(props) {
     habitData.color = "#7c3aed";
     setSelectedColor("#7c3aed");
   }
+
   function greyHandler() {
     habitData.color = "grey";
     setSelectedColor("grey");
   }
+
+
   function submitHandler(event) {
     event.preventDefault();
 
@@ -82,6 +82,13 @@ function NewHabitForm(props) {
     habitData.description = enteredDescription;
     habitData.time = [enteredHour, enteredMinute];
     habitData.status = false;
+
+    if(habitData.color === undefined){
+      habitData.color="grey"
+    }
+    if(habitData.day === undefined){
+      habitData.day="mon"
+    }
 
     props.onAdd(habitData);
 
