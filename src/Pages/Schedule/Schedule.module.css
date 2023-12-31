@@ -26,6 +26,7 @@
 }
 
 .HabitCard{
+    margin: 6px;
     height: 128px;
     flex-grow: 0;
 }
