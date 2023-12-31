@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap:12px;
+    gap:6px;
     align-items: center;
     
 }
@@ -34,7 +34,7 @@
 .CardContent{
     padding: 12px;
     gap: 12px;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
 }

@@ -42,30 +42,32 @@ function Schedule(props) {
   const Sundays = [];
 
   for (const key in userData) {
-    switch (userData[key].day) {
-      case "mon":
-        Mondays.push(userData[key]);
-        break;
-      case "tue":
-        Tuesdays.push(userData[key]);
-        break;
-      case "wed":
-        Wednesdays.push(userData[key]);
-        break;
-      case "thu":
-        Thursdays.push(userData[key]);
-        break;
-      case "fri":
-        Fridays.push(userData[key]);
-        break;
-      case "sat":
-        Saturdays.push(userData[key]);
-        break;
-      case "sun":
-        Sundays.push(userData[key]);
-        break;
-      default:
-        break;
+    if (userData[key].status === false) {
+      switch (userData[key].day) {
+        case "mon":
+          Mondays.push(userData[key]);
+          break;
+        case "tue":
+          Tuesdays.push(userData[key]);
+          break;
+        case "wed":
+          Wednesdays.push(userData[key]);
+          break;
+        case "thu":
+          Thursdays.push(userData[key]);
+          break;
+        case "fri":
+          Fridays.push(userData[key]);
+          break;
+        case "sat":
+          Saturdays.push(userData[key]);
+          break;
+        case "sun":
+          Sundays.push(userData[key]);
+          break;
+        default:
+          break;
+      }
     }
   }
 
