@@ -29,6 +29,7 @@ function Schedule(props) {
       });
   }, []);
 
+
   if (isLoading) {
     return <div>loading (temp)</div>;
   }
@@ -42,6 +43,7 @@ function Schedule(props) {
   const Sundays = [];
 
   for (const key in userData) {
+    userData[key].FirebaseKey = key;
     if (userData[key].status === false) {
       switch (userData[key].day) {
         case "mon":
@@ -84,8 +86,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Mondays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
@@ -102,8 +104,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Tuesdays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
@@ -120,8 +122,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Wednesdays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
@@ -138,8 +140,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Thursdays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
@@ -156,8 +158,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Fridays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
@@ -174,8 +176,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Saturdays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
@@ -192,8 +194,8 @@ function Schedule(props) {
         <div className={classes.CardStack}>
           {Sundays.map((habit) => {
             return (
-              <div className={classes.HabitCard}>
-                <Card key={habit.title}>
+              <div key={habit.FirebaseKey} className={classes.HabitCard}>
+                <Card >
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
