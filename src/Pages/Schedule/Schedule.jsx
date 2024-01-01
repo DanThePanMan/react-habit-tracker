@@ -2,6 +2,7 @@ import Card from "../../Components/card/Card";
 import classes from "./Schedule.module.css";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import FinishTask from "../../Components/FinishTaskButon/FInishTask";
 
 function Schedule(props) {
   const [userData, setUserData] = useState([]);
@@ -28,6 +29,21 @@ function Schedule(props) {
         setUserData(data);
       });
   }, []);
+
+  function CompleteHandler(cardData){
+    const key = cardData.FirebaseKey;
+    const dataClone = {...userData};
+    dataClone[key] = cardData;
+    console.log(dataClone[key]);
+    setUserData(dataClone);
+    fetch(`https://react-habit-tracker-2c7cd-default-rtdb.firebaseio.com/habitData.json`,{
+      method:"PATCH",
+      body: JSON.stringify(dataClone),
+      headers: {
+        'Content-Type': "application/JSON"
+    }
+    });
+  }
 
 
   if (isLoading) {
@@ -87,11 +103,14 @@ function Schedule(props) {
           {Mondays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>
@@ -105,11 +124,14 @@ function Schedule(props) {
           {Tuesdays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>
@@ -123,11 +145,14 @@ function Schedule(props) {
           {Wednesdays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>
@@ -141,11 +166,14 @@ function Schedule(props) {
           {Thursdays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>
@@ -159,11 +187,14 @@ function Schedule(props) {
           {Fridays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>
@@ -177,11 +208,14 @@ function Schedule(props) {
           {Saturdays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>
@@ -195,11 +229,14 @@ function Schedule(props) {
           {Sundays.map((habit) => {
             return (
               <div key={habit.FirebaseKey} className={classes.HabitCard}>
-                <Card >
+                <Card>
                   <div className={classes.CardContent}>
                     <div className={classes.HabitTitle}>{habit.title}</div>
                     <div>{habit.description}</div>
                     <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
+                    <div className={classes.SecondLayer}>
+                      <FinishTask cardData={habit} onComplete = {CompleteHandler}/>
+                    </div>
                   </div>
                 </Card>
               </div>

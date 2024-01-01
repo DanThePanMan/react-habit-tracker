@@ -39,6 +39,12 @@
     flex-direction: column;
 }
 
+.SecondLayer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .HabitTitle{
     font-weight: bold;
 }
