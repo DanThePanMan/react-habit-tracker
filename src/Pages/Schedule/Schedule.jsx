@@ -47,7 +47,7 @@ function Schedule(props) {
 
 
   if (isLoading) {
-    return <div>loading (temp)</div>;
+    return <div className={classes.Loading}>loading...</div>;
   }
 
   const Mondays = [];
