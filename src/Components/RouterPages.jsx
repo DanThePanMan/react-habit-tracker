@@ -1,6 +1,6 @@
 import Home from "../Pages/home/Home";
 import Schedule from "../Pages/Schedule/Schedule";
-import Search from "../Pages/Search";
+import Search from "../Pages/search/Search";
 import NewHabit from "../Pages/NewHabit/NewHabit";
 import NotFound from "../Pages/NotFound";
 import { AnimatePresence } from "framer-motion";

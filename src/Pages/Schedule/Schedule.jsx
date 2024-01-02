@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import FinishTask from "../../Components/FinishTaskButon/FInishTask";
 
-function Schedule(props) {
+function Schedule() {
   const [userData, setUserData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -34,7 +34,6 @@ function Schedule(props) {
     const key = cardData.FirebaseKey;
     const dataClone = {...userData};
     dataClone[key] = cardData;
-    console.log(dataClone[key]);
     setUserData(dataClone);
     fetch(`https://react-habit-tracker-2c7cd-default-rtdb.firebaseio.com/habitData.json`,{
       method:"PATCH",

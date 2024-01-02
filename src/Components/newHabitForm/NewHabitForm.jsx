@@ -115,7 +115,7 @@ function NewHabitForm(props) {
             />
           </div>
           <div className={classes.Control}>
-            <label htmlFor="hours">Amount of time</label>
+            <label htmlFor="hours">Amount of time (hours:minutes)</label>
             <div className={classes.timeInput}>
               <input type="number" required id="hours" max={24} ref={hoursRef} min={0} />
               <label htmlFor="minutes"> : </label>
