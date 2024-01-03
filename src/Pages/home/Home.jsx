@@ -68,7 +68,7 @@ function Home() {
         </Card>
       </div>
       <div className={classes.FinishedTasks}>
-        <div className={classes.FinishedTasksTitle}>Completed Tasks</div>
+        <div className={classes.FinishedTasksTitle}>Completed Tasks: </div>
         {ListOfCompletes.map((habit) => {
           return (
             <div key={habit.FirebaseKey} className={classes.HabitCard}>
