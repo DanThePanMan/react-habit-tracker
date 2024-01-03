@@ -2,10 +2,20 @@
     margin: 10px;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     gap: 10px;
-    background-color: red;
 }
 .LeftCluster{
+    display: flex;
+    flex-direction: column;
     flex-grow: 2;
+    gap: 12px;
     
+}
+
+.Graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
 }
