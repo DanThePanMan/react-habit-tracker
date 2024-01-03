@@ -3,9 +3,16 @@
     display: block;
 }
 
+
 .DataBars{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 12px;
+    gap: 32px;
+}
+
+.DayOfWeek{
+    margin-top: 24px;
+    font-size: 32px;
+    font-weight: bold;
 }

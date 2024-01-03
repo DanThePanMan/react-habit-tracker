@@ -19,3 +19,38 @@
     align-items: center;
     padding: 32px;
 }
+
+.FinishedTasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-y:auto;
+}
+
+.CardContent{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.FinishedTasksTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Title{
+    height: fit-content;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.CardGraphContent{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+

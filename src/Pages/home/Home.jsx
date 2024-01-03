@@ -52,17 +52,23 @@ function Home() {
       transition={{ duration: 0.13 }}
     >
       <div className={classes.LeftCluster}>
+        <div className={classes.CardContainer}>
+          <Card>
+            <div className={classes.Title}>
+              Hi, Here is a quick view of your week
+            </div>
+          </Card>
+        </div>
         <Card>
-          <h1>Hi, Here is a quick view of your week</h1>
-        </Card>
-        <Card>
-          <div className={classes.Graph}>
-            <GraphOfTasks data={userData} />
+          <div className={classes.CardGraphContent}>
+            <div className={classes.Graph}>
+              <GraphOfTasks data={userData} />
+            </div>
           </div>
         </Card>
       </div>
       <div className={classes.FinishedTasks}>
-        <div className={classes.FinishedTasksTitle}></div>
+        <div className={classes.FinishedTasksTitle}>Completed Tasks</div>
         {ListOfCompletes.map((habit) => {
           return (
             <div key={habit.FirebaseKey} className={classes.HabitCard}>

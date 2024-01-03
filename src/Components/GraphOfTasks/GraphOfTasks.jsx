@@ -52,10 +52,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Monday</div>
         </div>
         <div className={classes.Bar}>
           {Tuesdays.map((habit) => {
@@ -64,10 +65,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Tuesday</div>
         </div>
         <div className={classes.Bar}>
           {Wednesdays.map((habit) => {
@@ -76,10 +78,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Wednesday</div>
         </div>
         <div className={classes.Bar}>
           {Thursdays.map((habit) => {
@@ -88,10 +91,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Thursdays</div>
         </div>
         <div className={classes.Bar}>
           {Fridays.map((habit) => {
@@ -100,10 +104,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Friday</div>
         </div>
         <div className={classes.Bar}>
           {Saturdays.map((habit) => {
@@ -112,10 +117,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Saturday</div>
         </div>
         <div className={classes.Bar}>
           {Sundays.map((habit) => {
@@ -124,10 +130,11 @@ function GraphOfTasks(props) {
             const style = {
               backgroundColor: BarColor,
               height: barHeight * 10 + "px",
-              width: "64px",
+              width: "128px",
             };
             return <div key={habit.FirebaseKey} style={style}></div>;
           })}
+          <div className={classes.DayOfWeek}>Sunday</div>
         </div>
       </div>
       <div className={classes.Dine}></div>
