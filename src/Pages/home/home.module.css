@@ -59,6 +59,11 @@
     justify-content: center;
 }
 
+.description{
+    width: 256px;
+    text-wrap: true;
+}
+
 .Loading{
     font-weight: bold;
     color: grey;

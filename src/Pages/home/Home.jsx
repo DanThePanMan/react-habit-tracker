@@ -71,7 +71,7 @@ function Home() {
         <div className={classes.CardContainer}>
           <Card>
             <div className={classes.Title}>
-              Hi, Here is a quick view of your week
+              Here is a quick view of your week
             </div>
           </Card>
         </div>
@@ -91,7 +91,7 @@ function Home() {
               <Card>
                 <div className={classes.CardContent}>
                   <div className={classes.HabitTitle}>{habit.title}</div>
-                  <div>{habit.description}</div>
+                  <div className = {classes.description}>{habit.description}</div>
                   <div>{`${habit.time[0]} Hour(s) and ${habit.time[1]} Minute(s)`}</div>
                   <div className={classes.SecondLayer}>
                       <DeleteTask cardData={habit} onComplete = {DeleteHandler}/>
